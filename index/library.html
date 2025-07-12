@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cosmotrail Rover Gallery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(to right, #0F1F4B, #000000);
+      color: #F5F5F5;
+      font-family: 'Orbitron', sans-serif;
+      padding: 2rem;
+      margin: 0;
+    }
+
+    h1 {
+      text-align: center;
+      color: #FFD700;
+    }
+
+    label {
+      font-weight: 600;
+      margin-right: 10px;
+    }
+
+    #controls {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    select {
+      font-size: 1rem;
+      padding: 0.5rem;
+      border-radius: 5px;
+      border: none;
+    }
+
+    #gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    img.rover-photo {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      border: 2px solid #FFD700;
+      transition: transform 0.3s ease;
+    }
+
+    img.rover-photo:hover {
+      transform: scale(1.05);
+    }
+
+    .message {
+      text-align: center;
+      font-size: 1.2rem;
+      color: #48D1CC;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+    .navbar .back {
+      background: transparent;
+      border: none;
+      color: #FFD700;
+      font-size: 1.5rem;
+      cursor: pointer;
+
+    }
+
+    .navbar .back a {
+      text-decoration: none;
+      color: inherit;
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar">
+    <button class="back"> <a href="index.html">🔙 Back</a></button>
+</nav>
+  <h1>🪐 Cosmotrail: Mars Rover Photo Explorer</h1>
+
+  <div id="controls">
+    <label for="rover-select">Choose Rover:</label>
+    <select id="rover-select">
+      <option value="curiosity">Curiosity</option>
+      <option value="opportunity">Opportunity</option>
+      <option value="spirit">Spirit</option>
+      <option value="perseverance">Perseverance</option>
+    </select>
+  </div>
+
+  <div id="gallery" class="gallery"></div>
+
+  <script src="/script/lib.js"></script>
+</body>
+</html>

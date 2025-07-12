@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CosmoTrail</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+    <style>
+        body{
+            background-color: rgb(2, 2, 23);
+        }
+        h2{
+            color: #FFD700;
+            text-align: center;
+        }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+    .navbar .back {
+      background: transparent;
+      border: none;
+      color: #FFD700;
+      font-size: 1.5rem;
+      cursor: pointer;
+
+    }
+
+    .navbar .back a {
+      text-decoration: none;
+      color: inherit;
+    }
+    </style>
+</head>
+<body>
+<nav class="navbar">
+    <button class="back"> <a href="index.html">🔙 Back</a></button>
+</nav>
+
+<h2>🌌 Galaxy Formation Timeline</h2>
+<div id="galaxyTimeline"></div>
+   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js" defer></script>
+<script src="/script/galaxy.js" defer></script>
+</body>
+</html>

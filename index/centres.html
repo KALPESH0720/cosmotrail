@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CosmoTrail</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+    <style>
+        body{
+            background-color: rgb(2, 2, 23);
+        }
+        h2{
+            color: #FFD700;
+            text-align: center;
+        }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+    .navbar .back {
+      background: transparent;
+      border: none;
+      color: #FFD700;
+      font-size: 1.5rem;
+      cursor: pointer;
+
+    }
+
+    .navbar .back a {
+      text-decoration: none;
+      color: inherit;
+    }
+    /* #isroCenters{
+        background-color: black;
+        color: #f5f5f5;
+        border-radius: 1vh;
+        border-color: aqua;
+    } */
+     .infra-card {
+  background: #1A1A1A;
+  border: 2px solid #48D1CC;
+  border-radius: 10px;
+  color: #F5F5F5;
+  padding: 1rem;
+  margin: 1rem;
+  font-family: 'Orbitron', sans-serif;
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+    </style>
+</head>
+<body>
+<nav class="navbar">
+    <button class="back"> <a href="index.html">🔙 Back</a></button>
+</nav>
+
+<h2>🏢 ISRO Centers & 🚀 Launch Vehicles</h2>
+<div id="isroCenters"></div>
+<div id="isroLaunchers"></div>
+
+  
+
+<script src="/script/centres.js" defer>
+ 
+</script>
+</body>
+</html>
