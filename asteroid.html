@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cosmotrail Rover Gallery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(to right, #0F1F4B, #000000);
+      color: #F5F5F5;
+      font-family: 'Orbitron', sans-serif;
+      padding: 2rem;
+      margin: 0;
+    }
+
+    h1 {
+      text-align: center;
+      color: #FFD700;
+    }
+
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+    .navbar .back {
+      background: transparent;
+      border: none;
+      color: #FFD700;
+      font-size: 1.5rem;
+      cursor: pointer;
+
+    }
+
+    .navbar .back a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    input{
+        height: 5vh;
+        border-radius: 2vh;
+    }
+
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #FFD700;
+        gap: 10px;
+    }
+
+    div button{
+        background-color: #db8d07;
+        height: 5vh;
+        border-radius: 2vh;
+
+    }
+
+    div button:hover{
+        transition: 0.3s;
+        background-color: #db6607;
+    }
+
+    ul{
+        gap: 30px;
+
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar">
+    <button class="back"> <a href="index.html">🔙 Back</a></button>
+</nav>
+<div>
+<h2>☄️ Near-Earth Object Tracker</h2>
+
+<label for="startNeo">Start Date:</label>
+<input type="date" id="startNeo" />
+<label for="endNeo">End Date:</label>
+<input type="date" id="endNeo" />
+<button id="loadNeo">Load NEO Data</button>
+</div>
+<ul id="neoList"></ul>
+
+
+
+  
+
+  <script src="/script/dashboard.js"></script>
+</body>
+</html>

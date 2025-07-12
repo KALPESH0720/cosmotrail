@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cosmotrail Rover Gallery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@openeo/js-client/dist/bundle.min.js"></script>
+
+  <style>
+    
+
+  
+    body {
+      background: linear-gradient(to right, #0F1F4B, #000000);
+      color: #F5F5F5;
+      font-family: 'Orbitron', sans-serif;
+      padding: 2rem;
+      margin: 0;
+    }
+    canvas {
+      max-width: 100%;
+      background-color: #1A1A1A;
+      border: 2px solid #FFD700;
+      border-radius: 10px;
+      padding: 1rem;
+    }
+    h2 {
+      text-align: center;
+      color: #FFD700;
+    }
+  </style>
+
+  <style>
+    body {
+      background: linear-gradient(to right, #0F1F4B, #000000);
+      color: #F5F5F5;
+      font-family: 'Orbitron', sans-serif;
+      padding: 2rem;
+      margin: 0;
+    }
+
+    h1 {
+      text-align: center;
+      color: #FFD700;
+    }
+
+    label {
+      font-weight: 600;
+      margin-right: 10px;
+    }
+
+    #controls {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    select {
+      font-size: 1rem;
+      padding: 0.5rem;
+      border-radius: 5px;
+      border: none;
+    }
+
+    #gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    img.rover-photo {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      border: 2px solid #FFD700;
+      transition: transform 0.3s ease;
+    }
+
+    img.rover-photo:hover {
+      transform: scale(1.05);
+    }
+
+    .message {
+      text-align: center;
+      font-size: 1.2rem;
+      color: #48D1CC;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+    .navbar .back {
+      background: transparent;
+      border: none;
+      color: #FFD700;
+      font-size: 1.5rem;
+      cursor: pointer;
+
+    }
+
+    .navbar .back a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    div p{
+line-height: 5vh;
+    }
+
+  </style>
+</head>
+<body>
+<nav class="navbar">
+    <button class="back"> <a href="index.html">🔙 Back</a></button>
+</nav>
+<div>
+   <h1>🌌 About CosmoTrai</h1>
+   <p>CosmoTrail is a dynamic space exploration dashboard designed to illuminate the wonders of our universe—from the formation of galaxies to real-time planetary data and India’s cutting-edge missions. Whether you're a curious learner, a space tech enthusiast, or an explorer at heart, CosmoTrail invites you to journey through data, science, and animated insights.
+With seamless modules covering NASA’s EPIC Earth imagery, Near-Earth Objects, ISS tracking, Solar System evolution, galaxy formation, and ISRO’s remarkable achievements, CosmoTrail blends interactive visuals with curated knowledge in one unified space. <br>
+Powered by: <br>
+- 🔬 Scientific APIs like NASA EPIC, NeoWs, Open Notify <br>
+- 🚀 GSAP animations for immersive storytelling <br>
+- 📊 Chart.js and modular JavaScript for live dashboards <br>
+✨ Highlights <br>
+- Solar System & Galaxy Formation timelines <br>
+- NASA image & video search with mission descriptions <br>
+- Real-time asteroid & ISS tracking <br>
+- ISRO’s spacecraft, launch centers, and vehicles explorer <br>
+- Upcoming satellite launch visualizer <br>
+CosmoTrail isn’t just a website—it’s your orbital companion for discovering cosmic phenomena through curated data and elegant UI design. Built with passion, it celebrates humanity’s quest to understand the stars and encourages you to explore one module at a time. <br>
+
+
+</p>
+
+</div>
+
+
+ 
+  
+  
+
+</body>
+</html>

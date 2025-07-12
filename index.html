@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CosmoTrail</title>
+    <link rel="stylesheet" href="/style/main.css">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="/images/logo.png" alt="logo" class="logo">
+
+        <ul>
+            
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Space Today</a>
+                <div class="dropdown-content">
+                   <a href="library.html">Explore Mars</a>
+                   <a href="earth.html">Earth Today</a>
+                   <a href="asteroid.html">Asteroid tracking</a>
+                   <a href="#" id="where">Where's ISS?</a>
+                </div>
+            </li>
+             <li class="dropdown">
+                <a href="#" class="dropbtn">Library</a>
+                <div class="dropdown-content">
+                   <a href="nasalib.html">Nasa Library</a>
+                   <a href="#" id="news-link">News</a>
+                   <a href="solarsys.html">Solar System </a>
+                   <a href="galaxy.html">Galaxy Formation</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">From ISRO</a>
+                <div class="dropdown-content">
+                   <a href="isrospacecraft.html">Spacecrafts</a>
+                   <a href="launches.html">Satellite Launches</a>
+                   <a href="centres.html">Centers & Launchers</a>
+                  
+                </div>
+            </li>
+            
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <main>
+       <div class="msg">
+        <div class="welcome">
+        <h2>Welcome to CosmoTrail</h2>
+        <p>Your journey through the cosmos begins here.</p>
+        <p>Exploration begins now. Let the data guide you. Let wonder inspire you.</p>
+        </div>
+       </div>
+    </main>
+   <div id="news-section">
+  <h2>🛰️ Latest Space News</h2>
+  <div id="news-container"></div>
+</div>
+
+<div id="iss">
+    <h2>🛰️ Where is the ISS?</h2>
+<button id="trackISS">Get ISS Location</button>
+<p id="issLocation"></p>
+
+
+</div>
+
+    <footer>
+        <p>&copy; 2023 CosmoTrail. All rights reserved.</p>
+    </footer>
+
+    <script src="/script/script.js"></script>
+</body>
+</html>
